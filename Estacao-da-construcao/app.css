@@ -1,0 +1,225 @@
+/*corpo do site*/
+.corpo {
+    background: yellow;
+}
+body {
+    padding: 0;
+    margin: 0;  
+    background: #ff7b00; 
+}
+/*corpo do site*/
+
+
+/*barra de pesquisa*/
+.search-box{
+    position: absolute;
+    top: 3.5%;
+    left: 30%;
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-btn {
+    color: rgb(255, 255, 255);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.pesquisa {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 500px;
+}
+.search-box:hover > .pesquisa {
+    width: 500px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn{ 
+    background: rgb(0, 0, 0);
+}
+.Botão{ 
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    opacity: 0.4;
+}
+/*barra de pesquisa*/
+
+
+/*primeira barra de menu*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ff0000;
+    height: 16vh;
+    box-shadow: 2px 4px 6px black;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 9%;
+}
+.tudo, .tudo2 {
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -50px;
+    margin-top: -25px;
+}
+.menu2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-right: 10px auto;
+    margin-bottom: 65px;
+    margin-left: 600px;
+    
+}
+.menu-itens a img {
+    margin-top: 12vh;
+    height: 35px;
+    box-sizing: border-box;
+}
+.menu-itens2 a img {
+    margin-top: 12vh;
+    height: 35px;
+    box-sizing: border-box;
+}
+.menu-itens {
+    margin-left: 145px;
+}
+.menu-itens2 {
+    margin-left: 20px;
+}
+/*primeira barra de menu*/
+
+
+
+
+/*segunda barra de menu*/
+.nav2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ff0000;
+    height: 10vh;
+    box-shadow: 2px 4px 6px black;
+    margin-top: 50px;
+}
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-bottom: 60px;
+    margin-right: 1400px;
+}
+.perfil-vendedor a img {
+    margin-top: 12vh;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.perfil-cliente a img {
+    margin-top: 12vh;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.perfil-vendedor {
+    margin-left: 40px;
+}
+.perfil-cliente {
+    margin-left: 20px;
+}
+/*segunda barra de menu*/
+
+/*logos*/
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -450px;
+    margin-top: -5px;
+}
+.logo-raylan { 
+    margin-left: -15px;  
+}
+/*logos*/
+
+
+
+/*produtos*/
+.produto {
+    margin-top: 20px;
+    display: flex;
+
+}
+.produtos{
+    align-items: center;
+    height: 230px;
+    width: 190px;
+    border-radius: 15px;
+    background: #ffffff;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.carrinho{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.mais {
+    background: #ff0000;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    margin-left: 165px;
+    margin-top: -10px;
+}
+.mais1 {
+    font-size: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.produtos h1 {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5px;
+}
+.produtos h2 {
+    margin-top: -15px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
