@@ -161,34 +161,35 @@ nav {
     margin-left: 25px;
     margin-top: 9%;
 }
-.tudo {
+.nav-center {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 1400px) {
+    .nav-center {
+        flex-direction: column;
+    }
+    
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.logo {
+    width: 400px;
+    height: 200px;
     margin: 0;
+    margin-top: -30px;
     padding: 0;
-}
-.menu {
-    /* background-color: var(--yellow); */
-    height: 130px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin-left: -5vh;
-    margin-top: -23px; */
-    overflow: hidden;
-}
-.elegante {
-    background-color: var(--white);
-    height: 120px;
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10px;
-    margin-bottom: -10px;
-    transform: skew(30deg);
-}
-.elegante h1 {
-    color: var(--yellow);
+    background-image: url(../imagens//Estacão\ da\ Construção.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .caracteristica {
     height: 20px;
@@ -201,11 +202,6 @@ nav {
 .botão-1 {
     margin-left: 30px;
     font-size: 15px;
-}
-.l {
-    /* margin-top: 25px;
-    margin-left: 40px; */
-    z-index: 99;
 }
 .tudo2 {
     /* margin-left: -32vh; */
@@ -227,10 +223,6 @@ nav {
     align-self: center;
     display: flex;
     justify-content: center;
-}
-.menu img {
-    width: 150%;
-    height: 150%;
 }
 .menu2 a img {
     height: 30px;
