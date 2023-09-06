@@ -77,7 +77,7 @@ const loadProduct = (i) => {
     // avaliacao
     const avaliacaoHTML = card.querySelector('.avaliacao');
     const qtdAvaliacao = produtosArray[i].avaliacoes.length;
-    const mediaAvaliacao = produtosArray[i].avaliacoes.reduce((curr, prev) => curr + prev / qtdAvaliacao, 0);
+    const mediaAvaliacao = produtosArray[i].avaliacoes.reduce((prev, curr) => curr.valor + prev / qtdAvaliacao, 0);
     avaliacaoHTML.textContent = `${mediaAvaliacao} estrelas (${qtdAvaliacao})`;
     
     // preco ant
