@@ -81,16 +81,18 @@ async function cadastrar(evt) {
     const { name, email, senha } = createUser();
     console.log({ name, email, senha });
     if (mostrarErros()) return;
-    setTimeout(() => {
-        window.location.href = '../paginas/Estação%20da%20construção.html';
-    }, 500)
     return await fetch("http://localhost:3000/users", { headers: { "Content-Type": "application/json" }, method: "POST", body: JSON.stringify({
         name,
         email,
         senha,
     })})
         .then(res => res.json())
-        .then(res => alert("Conta criada com sucesso!\n"+JSON.stringify(res)));
+        .then(res => {
+            alert("Conta criada com sucesso!");
+            setTimeout(() => {
+                window.location.href = '../paginas/Estação%20da%20construção.html';
+            }, 500);
+        });
 }
 
 function createUser() {
