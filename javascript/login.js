@@ -58,7 +58,13 @@ async function login(evt) {
         .then(res => res.json())
         .then(res => {
             sessionStorage.setItem("authToken", res.token);
-            alert("token de autenticação:\n"+res.token);
+            if (res.error) {
+                alert("Houve um erro ao fazer login");
+                return;
+            }
+            setTimeout(() => {
+                window.location.href = '../paginas/Estação%20da%20construção.html';
+            }, 500);
         });
 }
 
