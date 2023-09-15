@@ -24,7 +24,7 @@ let produtosArray = new Array(9).fill({
     ],
     image: 'http://placeholder.com/544',
 });
-fetch('http://localhost:3000/products').then((res) => res.json()).then((res) => loadProducts(res));
+//fetch('http://localhost:3000/products').then((res) => res.json()).then((res) => loadProducts(res));
 
 const produtoHTML = `
     <div class="produto">

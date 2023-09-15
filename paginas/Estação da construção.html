@@ -63,7 +63,7 @@
                           <img src="../imagens/procurando-lente-de-aumento.png" height="30px" width="30px"><i class="fas fa-search"></i>
                        </button>
                      </form> -->
-                    <form class="search-box">
+                    <form class="search-box" id="pesquisar-input">
                        <input class="pesquisa" type="text" name="" placeholder="Pesquisar na Estação da construção">
                        <a class="search-btn" href="#"> <img src="../imagens/procurando-lente-de-aumento.png" height="30px"
                              width="30px">
@@ -81,9 +81,22 @@
                            <a href=""><img src="../imagens/botao-de-coracao-favorito.png"></a>
                         </div>
          
-                        <div class="menu-itens2">
+                        <!-- <div class="menu-itens2">
                            <a href=""><img src="../imagens/botao-redondo-da-conta-com-o-usuario-dentro.png"></a>
-                        </div>
+                        </div> -->
+
+                        <div class="dropdown menu-itens2">
+                           <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="../imagens/botao-redondo-da-conta-com-o-usuario-dentro.png">
+                           </a>
+                         
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                             <li><a class="dropdown-item" href="./Configuracoes.html">Configurações</a></li>
+                             <li><a class="dropdown-item" href="./Vendedor (Estação da Construção).html">Página do Vendedor</a></li>
+                             <li><hr class="dropdown-divider"></li>
+                             <li><a class="dropdown-item" href="#">Sair</a></li>
+                           </ul>
+                         </div>
                      </div>
                   </div>
                  </div>
@@ -1102,6 +1115,7 @@
       </div>
    </footer>
 
+   <script src="../javascript/search-box.js"></script>
    <script src="../javascript/product.js"></script>
 </body>
 </html>
